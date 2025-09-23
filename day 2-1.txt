@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main() {
+    int marks1;
+    int marks2;
+    int marks3;
+    printf("Enter the student marks 1: ");
+    scanf("marks1");
+    printf("Enter the student marks 2:\n");
+    scanf("marks2");
+    printf("Enter the student marks 3:\n");
+    scanf("marks3");
+    printf("Enter the subject name 1:\n");
+    scanf("subject name");
+    return 0;
+}
