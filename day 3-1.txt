@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main(){
+    int fact = 1,num;
+    printf("\n Enter the number: ");
+    scanf("%d", &num);
+    if(num==0)
+    fact=1;
+    else
+    {
+        for(int i=1;i<=num;i++)
+        fact=fact*i;
+    }
+    printf("\nFactorial of %d is:%d",num,fact);
+    return 0;
+}
+
+output:
+Enter the number: 5
+
+Factorial of 5 is:120
+
+=== Code Execution Successful ===
