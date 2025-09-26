@@ -1,0 +1,42 @@
+#include <stdio.h>
+int main() {
+    int n, i, num;
+    int positive = 0, negative = 0, zero = 0;
+    printf("Enter the number of integers: ");
+    scanf("%d", &n);
+    printf("Enter %d integers:\n", n);
+    for (i = 0; i < n; i++) {
+        scanf("%d", &num);
+        if (num > 0) {
+            positive++;
+        } else if (num < 0) {
+            negative++;
+        } else {
+            zero++;
+        }
+    }
+    printf("Positive numbers: %d\n", positive);
+    printf("Negative numbers: %d\n", negative);
+    printf("Zeroes: %d\n", zero);
+    return 0;
+}
+
+output:
+Enter the number of integers: 10
+Enter 10 integers:
+-1
+0
+1
+2
+2
+3
+4
+5
+6
+7
+Positive numbers: 8
+Negative numbers: 1
+Zeroes: 1
+
+
+=== Code Execution Successful ===
