@@ -1,0 +1,34 @@
+#include <stdio.h>
+int main() {
+    int size, i, num, occr = 0;
+    printf("Please Enter the Array size = ");
+    scanf("%d", &size);
+    int arr[size];
+    printf("Enter the Array %d elements: ", size);
+    for (i = 0; i < size; i++) {
+        scanf("%d", &arr[i]);
+    }
+    printf("Please Enter the Array Item to Know = ");
+    scanf("%d", &num);
+    for (i = 0; i < size; i++) {
+        if (arr[i] == num) {
+            occr++;
+        }
+    }
+    printf("%d Occurred %d Times.\n", num, occr);
+    return 0;
+}
+
+output:
+Please Enter the Array size = 5
+Enter the Array 5 elements: 
+123
+25
+46
+643
+5365
+Please Enter the Array Item to Know = 3
+3 Occurred 0 Times.
+
+
+=== Code Execution Successful ===
