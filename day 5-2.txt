@@ -1,0 +1,38 @@
+#include <stdio.h>
+int main() {
+    int n, i, max;
+    printf("Enter the number of elements in the array: ");
+    scanf("%d", &n);
+    int arr[n];  
+    printf("Enter %d elements:\n", n);
+    for (i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+    max = arr[0];
+    for (i = 1; i < n; i++) {
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+
+    printf("The maximum element in the array is: %d\n", max);
+    return 0;
+}
+
+output:
+Enter the number of elements in the array: 10
+Enter 10 elements:
+34
+2352
+46346
+43263
+567
+25376
+7457
+345757
+457
+2572
+The maximum element in the array is: 345757
+
+
+=== Code Execution Successful ===
