@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <ctype.h>
+int main() {
+    char str[200];
+    int i = 0, wordCount = 0, inWord = 0;
+    printf("Enter a string: ");
+    fgets(str, sizeof(str), stdin);
+    while (str[i] != '\0') {
+        if (isspace(str[i])) {
+            inWord = 0;
+        } else if (inWord == 0) {
+            inWord = 1;
+            wordCount++;
+        }
+        i++;
+    }
+    printf("Number of words: %d\n", wordCount);
+    return 0;
+}
+
+output:
+Enter a string: say my name
+Number of words: 3
+
+
+=== Code Execution Successful ===
